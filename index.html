@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+    body
+    {
+      background: url("images/bg-pattern-top.svg"),url("images/bg-pattern-bottom.svg"),hsl(185, 75%, 39%);
+      background-repeat: no-repeat,no-repeat;
+      background-position: top -55vh right 51.4vw, top 46vh left 58vw;
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+    .main-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 800px;
+      height: 100vh;
+    }
+    .item{
+      display: block;
+      width: 100%;
+    }
+    .mainbox{
+      width:50%;
+      background-color: white;
+      border-radius: 15px;
+    }
+    .flexbox{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .cover{
+      display: flex;
+      justify-content: center;
+      position: relative;
+      background: url("images/bg-pattern-card.svg");
+      height: 150px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .cover img{
+      border: 5px solid;
+      border-color: white;
+     position: absolute;
+     border-radius: 50%;
+     top: 65%;
+    }
+    p{
+      text-align: center;
+      color: hsl(227, 10%, 46%);
+    }
+    .fullname{
+      margin-top: 20%;
+    }
+    ul{
+      border-top: 0.2px solid hsl(0, 0%, 90%);
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      padding: 0;
+    }
+    ul li{
+      width: 100%;
+    }
+    .fullname{
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: hsl(229, 23%, 23%);
+      margin-bottom: 0;
+    }
+    .age{
+      color: hsl(227, 10%, 46%);
+      font-weight: 400;
+    }
+    .header{
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: hsl(229, 23%, 23%);
+      padding: 0;
+      margin-bottom: 0;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main-container">
+    <div class="item mainbox">
+      <div class="flexbox">
+        <div class="item cover">
+          <img src="images/image-victor.jpg" alt="victor crest">
+        </div>
+        <div class="item">
+          <p class="fullname">Victor Crest <span class="age">26</span></p>
+          <p class="capitalcity">London</p>
+        </div>
+        <div class="item">
+          <ul>
+            <li><p class="header">80K</p><p class="detail">Followers</p></li>
+            <li><p class="header">803K</p><p class="detail">Likes</p></li>
+            <li><p class="header">1.4K</p><p class="detail">Photos</p></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Chaiyut Kongprawat</a>.
+  </div>
+  
+</body>
+</html>
